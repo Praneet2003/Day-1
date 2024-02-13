@@ -71,7 +71,7 @@ console.log(checkPrice);
 const numb = [3,5,7,9,12]
 const result = numb.some((number)=>number%2===0);
 console.log(result);
-//real-line example 
+//real-life example 
 const Cart =[
     {productId: 1, productName: "mobile" ,price: 12000},
     {productId: 2, productName: "tab" ,price: 29000},
