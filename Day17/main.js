@@ -87,8 +87,25 @@ const user3 = {
     firstName: "Anshu",
     age: 20,
     about: ()=> {//arrow function aapni this surronding me ek level  upar se lega
-        console.log(this.firstName,this.age);
+         console.log(this);//window
+         console.log(this.firstName,this.age);
+       
     }
 }
 user3.about.call(user3);//undefined undefined
 //functions to create multiple objects
+const useri = {
+    firstName: "Mehul",
+    age : 20,
+    email : "rajmehul23@gmail.com",
+    address: "Karhariya road banka,pokhari gali, near kali maindir",
+    about: function(){
+        return `${this.firstName} is ${this.age} years`;
+    },
+    is18 : function(){
+        return this.age>=18;
+    } 
+}
+const aboutuser = useri.about();
+console.log(aboutuser);
+
