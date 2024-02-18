@@ -111,9 +111,6 @@ class Dog{
     iscute(){
         return true;
     }
-    run(){
-        return `my horse name is ${this.name}, his age is ${this.age} and he runs at ${this.speed}`;
-    }
 }
 const tom = new Dog('tommy',3);
 console.log(tom.eat());
@@ -128,7 +125,16 @@ class Horse extends Animal{
         super(name,age);
         this.speed = speed;
     }
+    runs(){
+        return `my horse name is ${this.name}, his age is ${this.age} and he runs at ${this.speed}`;
+    }
+    //MODIFING THE EAT OF HORSE
+    eat(){
+        return`this is the eating of horse green grass`;
+    }
 }
-const rase = new Horse('rase',21,70);
+const rase = new Horse('rase',21,'70kmph');
 console.log(rase.eat());
-console.log(rase.run());
+console.log(rase.runs());
+console.log(rase.eat())
+//
