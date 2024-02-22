@@ -62,7 +62,7 @@ console.log(resSquare);
 //
 const MyFunction = (power) => (number) =>  number**power;
 var result = MyFunction(3);//here result is representing the innner function
-var num1 = result(5);
+var num1 = result(5);//here 5 is the number,3 is the power
 var result = MyFunction(2);
 var num = result(5);
 console.log(num1);
