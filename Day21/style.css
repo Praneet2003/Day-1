@@ -1,0 +1,36 @@
+body{
+    font-family: "poppins", sans-serif;
+}
+    
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    /* background-color: aqua; */
+    min-height: 10vh;
+    background-image: url("pexels-krivec-ales-547114.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+.nav{
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items{
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-b;
+    padding: 10px;
+}
