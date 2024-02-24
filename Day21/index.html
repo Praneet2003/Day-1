@@ -6,20 +6,21 @@
     <title>My Website</title>
     <link rel="icon" href="logo.jpg">
     <link href="style.css" rel="stylesheet">
+    <script src="main1.js" defer></script>
 </head>
 <body>
-    <script src="main.js"></script>
     <header class="header">
         <nav class="nav container">
             <h1 class="logo"> Hi Website!</h1>
             <ul class="nav-items">
-                <li><a href="">Home</a></li>
-                <li><a href=" ">Todo</a></li>
-                <li><a href=" ">Sign Up</a></li>
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href=" ">Todo</a></li>
+                <li class="nav-item"><a href=" ">Sign Up</a></li>
             </ul>
         </nav>
         <div class = "headline">
-            <h1>manage your task</h1>
+            <h1 id="main-heading">manage your task <span style="display: none;">Praneet</span></h1>
+            <!-- the purpose of span tag is to wrap the text and style them -->
             <button class="btn btn-headline">Learn More</button>
         </div>
     </header>

@@ -1,1 +1,52 @@
-vjhvbjkb
+html file=> parse(i.e reading the file line by line)
+methord of linking js file in html and sorting out the best method out of it.:-
+method1 =>
+//
+//
+<head>
+    <script src="main.js"></script>
+</head>
+if we add script tag to add js file in HEAD it will stop parsing(reading the file).
+and at the time of  executing it will fetch an error and js will not be executed.
+//
+//
+method2=>
+//
+//
+<body>
+    <script src="main.js"></script>
+</body>
+adding script tag at the bottom of body(body ke andar hi sbse last me) 
+es methord me sare html ke code pehle run hone ke baad JavaScript ki file load hokr execute ho jayegi.
+lekin isme vi problem hai:-
+it is time taking nad less responsive.
+//
+//
+method3=>
+//
+//
+<head>
+    <script src="main.js" async></script>
+</head>
+now in this above code what is async attribute
+ye async ki wajah hmari parsing aur js file loading saath saath hoti rahegi
+loading hone ke baad execute hone lagi.
+isme vi ek problem hai:-
+agar hmari hmtl file jad hi lambi ho aur parse hone ke pehle pehle hi agar 
+js file load ho gai to us case me 
+hmari html file aadhi hi execute ho payegi i.e high risk of error
+//
+//
+method4 =>
+BEST WAY
+<head>
+    <script src="main.js" defer></script>
+</head>
+isme vi parsing aur js file ki loading saath saath hogi,lekin isme difference
+ ye hai ki jb tk hmari
+html file parse  nhi ho jati js file laod hakr wait karega execution ka.
+isse hmari website ki performance badh jayegi.
+//time km lgti hai isme.
+
+
+
