@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="icon" href="logo.jpg">
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="logo"> Hi Website!</h1>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href=" ">Todo</a></li>
+                <li class="nav-item"><a href=" ">Sign Up</a></li>//
+            </ul>
+        </nav>
+        <div class = "headline">
+            <h1 id="main-heading">manage your task <span style="display: none;">Praneet</span></h1>
+            <!-- the purpose of span tag is to wrap the text and style them -->
+            <button class="btn btn-headline">Learn More</button>
+        </div>
+    </header>
+    <section class="section-todo">
+        <h2>Your plan for today ?</h2>
+        <form action="" class="form-todo">
+            <input type="text" name="" id="" placeholder="Add Todo">
+            <input type="submit" value="Add Todo" class="btn">
+        </form>
+    </section>
+    <!-- section.section-signup , shortcut fo adding class with any tag -->
+    <section class="section-signup">
+        <h2>Sign up</h2>
+        <form action="" class="signup-form">
+            <div class="form-group">
+                <label for="username">Username =></label>
+                <input type="text" name="username" id="username" placeholder="enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">password =></label>
+                <input type="password" name="password" id="password" placeholder="enter your password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm-password =></label>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="enter your username">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone no =></label>
+                <input type="text" name="phone" id="phone" placeholder="enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="email">Email =></label>
+                <input type="email" name="email" id="email" placeholder="enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="about">About YourSelf =></label><br>
+                <textarea name="about" id="about" cols="63" rows="10" placeholder="enter about yourself"></textarea>
+            </div>
+            <button type="submit" class="btn-sign">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
